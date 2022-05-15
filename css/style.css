@@ -1,0 +1,508 @@
+/*---------------------- RESET ---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------- FUENTES ----------------------*/
+
+@font-face {
+    font-family: beautyDemo;
+    src: url(../font/beautyDemo.ttf);
+}
+
+@font-face {
+    font-family: 'AlteHaasGroteskRegular';
+    src: url(../font/AlteHaasGroteskRegular.ttf);
+}
+
+main, a, aside {
+    font-family: 'AlteHaasGroteskRegular';
+}
+
+header, footer {
+    font-family: 'beautyDemo';
+}
+
+/*---------------------- MOBILE FIRST ----------------------*/
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*----- HEADER -----*/
+
+header {
+    background-color: #f3f2f1; 
+    grid-area: header;
+    padding-top: 10px;
+}
+
+@keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+h1,h2,.divisor {
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 10px 25px 0px 15px;  
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 0px 25px 0px 15px;
+}
+
+/*----- MENU -----*/
+
+nav {
+    background-color: #1d70b8;
+    grid-area: nav;
+}
+
+a {
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,.botones input:hover {
+    background-color: #28a197;
+    height: auto;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    line-height: 2.5rem;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0;
+}
+
+/*----- MAIN -----*/
+
+main {
+    grid-area: main;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+
+h4, h5 {
+    font-size: 2rem;
+}
+
+h3, h4 {
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 5px 30px 25px 30px;
+    text-align: justify;
+}
+
+/*----- FOOTER -----*/
+
+footer {
+    background-image: linear-gradient(to top, #f499be, #ffffff );
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .quote{
+    font-size: 3rem;
+}
+
+footer .yeats {
+    font-size: 2.5rem; 
+}
+
+footer a {
+    font-size: 2rem;
+    margin-top: 15px; 
+    font-weight: bold;
+}
+
+/*----- FORMULARIO -----*/
+
+h5 {
+    margin-bottom: 25px;
+}
+
+.form {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+fieldset {
+    background-color: #f3f2f1; 
+    text-align: start;
+    width: 280px;
+    margin: 5px 15px 30px 15px;
+}
+
+fieldset input {
+    margin-bottom: 15px;
+}
+
+.form input, .form label, .form textarea {
+    margin-left: 15px;
+    
+}
+
+.form textarea {
+    overflow: auto;
+    margin-right: 15px;
+}
+
+.seccionVideo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+} 
+
+iframe {
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.checkbox {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.botones input {
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border: 1.5px solid black;
+    border-radius: 6px;
+}
+
+/*----- IMÁGENES -----*/
+
+div img {
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+}
+
+ul li img {
+    height: 200px;
+    width: auto;
+}
+
+.divisor {
+    width: 190px;
+    padding-bottom: 10px;
+}
+
+.imgForm, .globe {
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+/*---------------------- VISTA TABLET ----------------------*/
+
+@media screen and (min-width: 768px) {
+    .gridBody {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "main main"
+        "footer footer";
+    }
+
+    /*----- HEADER -----*/
+
+    .saltoHeader {
+        display: none;
+    }
+
+    header {
+        padding-top: 15px;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    /*----- MENU -----*/
+
+    nav {
+        position: sticky;
+        top: 0px;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        line-height: 3rem;
+    }
+
+    a {
+        font-size: 2.2rem;  
+    }
+    
+    /*----- MAIN -----*/
+   
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4, h5 {
+        font-size: 2.5rem;
+    }
+    
+    article p {
+        font-size: 2rem;
+        line-height: 3.5rem;
+        margin: 10px 40px 30px 40px;
+    }
+    
+    /*----- FOOTER -----*/
+    
+    footer {
+        padding: 35px;
+    }
+    
+    footer .quote{
+        font-size: 4.5rem;
+    }
+    
+    footer .yeats {
+        font-size: 3.5rem; 
+    }
+    
+    footer a {
+        font-size: 2.5rem;
+    }
+    
+    /*----- FORMULARIO -----*/
+    
+    .form {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    fieldset {
+        width: 500px;
+    }
+    
+    fieldset .fill {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 300px;
+    }
+
+    .form textarea {
+        width: 400px;
+        height: 200px;
+    }
+    
+    .seccionVideo {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    } 
+
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .checkbox {
+        font-size: 2rem;
+    }
+    
+    .botones input {
+        padding: 10px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    /*----- IMÁGENES -----*/
+    
+    div img {
+        width: 600px;
+    }
+    
+    ul li img {
+        height: 400px;
+    }
+    
+    .divisor {
+        width: 250px;
+    }
+
+    .imgForm, .globe {
+    width: 550px;
+    }
+}
+
+/*---------------------- VISTA DESKTOP ----------------------*/
+
+@media screen and (min-width: 1024px) {
+
+    .gridBody {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+  
+    /*----- HEADER -----*/
+
+    header {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 6.5rem; 
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+    }
+
+    /*----- MENU -----*/
+
+    a {
+        font-size: 2.5rem;  
+    }
+    
+    /*----- MAIN -----*/
+    
+    h3 {
+        font-size: 4rem;
+    }
+    
+    h4, h5 {
+        font-size: 3rem;
+    }
+    
+    article p {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        margin: 15px 80px 35px 80px;
+    }
+    
+    /*----- FOOTER -----*/
+    
+    
+    footer .quote{
+        font-size: 5rem;
+    }
+    
+    footer .yeats {
+        font-size: 5rem; 
+    }
+    
+    footer a {
+        font-size: 3rem;
+    }
+    
+    /*----- FORMULARIO -----*/
+    
+    .form {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    
+    fieldset {
+        width: 700px;
+    }
+    
+    fieldset .fill {
+        height: 50px;
+        width: 400px;
+    }
+
+    .form textarea {
+        width: 600px;
+        height: 300px;
+    }
+    
+    iframe {
+        margin-top: 20px;
+        width: 700px;
+        height: 500px;
+    }
+    
+    .checkbox {
+        font-size: 2.5rem;
+    }
+    
+    .botones input {
+        padding: 15px;
+        font-size: 2.3rem;
+    }
+    
+    /*----- IMÁGENES -----*/
+    
+    div img {
+        width: 800px;
+    }
+    
+    ul li img {
+        height: 600px;
+    }
+    
+    .divisor {
+        width: 400px;
+    }
+
+    .globe {
+    width: 700px;
+    }
+
+    .imgForm {
+        width: 850px;
+    }
+
+} 
+
+
+
+
