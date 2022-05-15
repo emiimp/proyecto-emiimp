@@ -119,11 +119,32 @@ h3, h4 {
     margin-bottom: 20px;
 }
 
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 article p {
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin: 5px 30px 25px 30px;
     text-align: justify;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+h3::selection,h4::selection,p::selection {
+    background: #ffdd00;
+    color: black;
 }
 
 /*----- FOOTER -----*/
