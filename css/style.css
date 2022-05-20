@@ -1,3 +1,5 @@
+
+
 /*---------------------- RESET ---------------------- */
 
 * {
@@ -41,8 +43,10 @@ html {
 
 header {
     background-color: #f3f2f1; 
-    grid-area: header;
     padding-top: 10px;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes titulo {
@@ -73,18 +77,21 @@ h2 {
 /*----- MENU -----*/
 
 nav {
-    background-color: #1d70b8;
     grid-area: nav;
+    background-color: #1d70b8;
+    
 }
 
-a {
+/*Pregunta: quiero poner display-flex + justify content: space-evenly, pero no me deja. Cómo hago?*/
+
+.navbar li, footer a {
     color: #ffffff;
+    /*Pregunta: no cambia el color de la fuente de las anclas. Por qué?*/
     font-size: 1.7rem;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none; 
 }
 
-a:hover,.botones input:hover {
+a:hover,.botones:hover {
     background-color: #28a197;
     height: auto;
     width: auto;
@@ -119,27 +126,19 @@ h3, h4 {
     margin-bottom: 20px;
 }
 
-
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+.imgIntro {
+    border: #1d70b8 1px solid;
 }
 
-article p {
+.imgIntro p {
+    font-size: 1rem;
+}
+
+.articleP {
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin: 5px 30px 25px 30px;
     text-align: justify;
-    animation-name: slide-left;
-    animation-duration: 2s;
-    animation-iteration-count: initial;
 }
 
 h3::selection,h4::selection,p::selection {
@@ -188,9 +187,10 @@ h5 {
 }
 
 fieldset {
+    padding-top: 10px;
     background-color: #f3f2f1; 
     text-align: start;
-    width: 280px;
+    width: 290px;
     margin: 5px 15px 30px 15px;
 }
 
@@ -198,9 +198,9 @@ fieldset input {
     margin-bottom: 15px;
 }
 
-.form input, .form label, .form textarea {
+.rellenar, .form label, .form textarea {
     margin-left: 15px;
-    
+    width: 250px;
 }
 
 .form textarea {
@@ -224,9 +224,10 @@ iframe {
     font-weight: bold;
 }
 
-.botones input {
+.botones {
     padding: 5px;
     margin-bottom: 15px;
+    margin-left: 15px;
     font-size: 1.5rem;
     border: 1.5px solid black;
     border-radius: 6px;
@@ -234,13 +235,19 @@ iframe {
 
 /*----- IMÁGENES -----*/
 
-/* div img {
+.carousel {
     width: 300px;
     height: auto;
     margin-top: 30px;
+  }
+
+.contenedorImagenes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-ul li img {
+ul li img, .laptop {
     height: 200px;
     width: auto;
 }
@@ -253,7 +260,7 @@ ul li img {
 .imgForm, .globe {
     width: 290px;
     margin-bottom: 20px;
-} */
+} 
 
 /*---------------------- VISTA TABLET ----------------------*/
 
@@ -286,20 +293,11 @@ ul li img {
         font-size: 4.5rem;
     }
 
+
     /*----- MENU -----*/
 
-    nav {
-        position: sticky;
-        top: 0px;
-    }
-
-    nav ul {
-        flex-flow: row wrap;
-        line-height: 3rem;
-    }
-
     a {
-        font-size: 2.2rem;  
+        font-size: 2rem;  
     }
     
     /*----- MAIN -----*/
@@ -312,7 +310,11 @@ ul li img {
         font-size: 2.5rem;
     }
     
-    article p {
+    .imgIntro p {
+        font-size: 1.5rem;
+    }
+
+    .articleP {
         font-size: 2rem;
         line-height: 3.5rem;
         margin: 10px 40px 30px 40px;
@@ -325,7 +327,7 @@ ul li img {
     }
     
     footer .quote{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     
     footer .yeats {
@@ -344,7 +346,7 @@ ul li img {
     }
     
     fieldset {
-        width: 500px;
+        width: 450px;
     }
     
     fieldset .fill {
@@ -353,8 +355,12 @@ ul li img {
         width: 300px;
     }
 
-    .form textarea {
+    .rellenar, .form label, .form textarea {
+        margin-left: 15px;
         width: 400px;
+    }
+
+    .form textarea {
         height: 200px;
     }
     
@@ -373,28 +379,36 @@ ul li img {
         font-size: 2rem;
     }
     
-    .botones input {
+    .botones {
         padding: 10px;
         font-size: 2rem;
         margin-bottom: 15px;
     }
+
+  /*----- IMÁGENES -----*/
     
-    /*----- IMÁGENES -----*/
-    
-    div img {
-        width: 600px;
+    .carousel {
+        width: 500px;
     }
-    
-    ul li img {
+    .imgIntro {
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .imgIntro p {
+        font-size: 2rem;
+    }
+
+    ul li img, .laptop {
         height: 400px;
     }
-    
+
     .divisor {
         width: 250px;
     }
 
     .imgForm, .globe {
-    width: 550px;
+        width: 550px;
     }
 }
 
@@ -420,19 +434,14 @@ ul li img {
     }
 
     h1 {
-        font-size: 6.5rem; 
+        font-size: 7rem; 
     }
     
     h2 {
-        font-size: 5.5rem;
+        font-size: 6rem;
     }
 
-    /*----- MENU -----*/
-
-    a {
-        font-size: 2.5rem;  
-    }
-    
+   
     /*----- MAIN -----*/
     
     h3 {
@@ -449,30 +458,16 @@ ul li img {
         margin: 15px 80px 35px 80px;
     }
     
-    /*----- FOOTER -----*/
-    
-    
-    footer .quote{
-        font-size: 5rem;
-    }
-    
-    footer .yeats {
-        font-size: 5rem; 
-    }
-    
-    footer a {
-        font-size: 3rem;
-    }
-    
     /*----- FORMULARIO -----*/
     
     .form {
         font-size: 3rem;
         line-height: 4.5rem;
+        margin: 20px;
     }
     
     fieldset {
-        width: 700px;
+        width: 650px;
     }
     
     fieldset .fill {
@@ -495,21 +490,17 @@ ul li img {
         font-size: 2.5rem;
     }
     
-    .botones input {
+    .botones {
         padding: 15px;
         font-size: 2.3rem;
     }
     
     /*----- IMÁGENES -----*/
     
-    div img {
-        width: 800px;
-    }
-    
-    ul li img {
-        height: 600px;
-    }
-    
+    .carousel {
+        width: 700px;
+      }
+     
     .divisor {
         width: 400px;
     }
@@ -523,7 +514,5 @@ ul li img {
     }
 
 } 
-
-
-
-
+    
+   

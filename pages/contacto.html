@@ -18,55 +18,86 @@
 
 </head>
 
-<body class="gridBody">
+<body class="gridBody container-fluid">
 
     <header id="header">
         <section>
             <h1>Let's Learn with <br class="saltoHeader"> Emily</h1>
             <h2>Clases virtuales de idioma</h2>
-            <img src="../img/divisorgris.png" alt="divisor" class="divisor">
         </section>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/clases.html">Clases y talleres personalizados</a></li>
-            <li><a href="../pages/about.html">Acerca de mí</a></li>
-            <li><a href="../pages/estudiaring.html">¿Por qué estudiar inglés?</a></li>
-        </ul>
-    </nav>  
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+          <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/clases.html">Clases y talleres personalizados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">Acerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/estudiaring.html">¿Por qué estudiar inglés?</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     <main>
 
         <section>
+
             <h3>¿Preguntas? ¡Escribime!</h3>
             <form action="#" class="form">
-                    <fieldset>
-                        <legend><h5>Formulario de contacto</h5></legend>
-                        <label for="Nombre">Nombre y apellido:</label><br><input id="Nombre" type="text" class="fill"><br>
-                        <label for="Edad">Edad:</label><br><input id="Edad" type="text" class="fill"><br>
-                        <label for="E-mail">E-mail:</label><br><input id="E-mail" type="text" class="fill"><br>
-                        <label for="consulta">¿En qué puedo ayudarte?</label><br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                        <div class="botones">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar texto">
-                        </div>
-                    </fieldset>
+              <fieldset class="container">
+                <div class="mb-3">
+                  <label for="Nombre" class="form-label">Nombre:</label>
+                  <input type="email" class="form-control rellenar" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="Nombre" class="form-label">Edad:</label>
+                  <input type="email" class="form-control rellenar" id="exampleFormControlInput1" placeholder="Edad">
+                </div>
+                <div class="mb-3">
+                  <label for="Nombre" class="form-label">E-mail:</label>
+                  <input type="email" class="form-control rellenar" id="exampleFormControlInput1" placeholder="E-mail">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿En qué puedo ayudarte?</label>
+                  <textarea class="form-control rellenar" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div><br>
+                <div>
+                  <input type="submit" value="Enviar" class="botones">
+                  <input type="reset" value="Borrar texto" class="botones">
+                </div>
+              </fieldset>
             </form>
-                <img src="../img/pexels-olya-kobruseva-5428830.jpg" alt="Question marks" class="imgForm">
+
+            <img src="../img/pexels-olya-kobruseva-5428830.jpg" alt="Question marks" class="imgForm">
+
         </section>
 
         <article>
             <h4>¿Querés suscribirte al newsletter?</h4>
-            <p>Una vez por semana, vas a recibir una selección de artículos, noticias, música y demás material misceláneo de interés cultural.</p>
+            <p class="articleP lead">Una vez por semana, vas a recibir una selección de artículos, noticias, música y demás material misceláneo de interés cultural.</p>
             <form action="">
                 <div class="checkbox">
                     <input type="checkbox" name="Sí"> <label for="Sí">Sí, quiero suscribirme al Newsletter semanal</label><br><br>
-                    <div class="botones">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar selección">
+                    <div>
+                        <input type="submit" value="Enviar" class="botones">
+                        <input type="reset" value="Borrar selección" class="botones">
                     </div>
                 </div>
             </form>

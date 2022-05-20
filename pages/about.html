@@ -18,44 +18,131 @@
 
 </head>
 
-<body class="gridBody">
+<body class="gridBody container-fluid">
 
     <header id="header">
         <section>
             <h1>Let's Learn with <br class="saltoHeader"> Emily</h1>
             <h2>Clases virtuales de idioma</h2>
-            <img src="../img/divisorgris.png" alt="divisor" class="divisor">
         </section>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/clases.html">Clases y talleres personalizados</a></li>
-            <li><a href="../pages/estudiaring.html">¿Por qué estudiar inglés?</a></li>
-            <li><a href="../pages/contacto.html">¿Preguntas? ¡Escribime!</a></li>   
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/clases.html">Clases y talleres personalizados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/estudiaring.html">¿Por qué estudiar inglés?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">¿Preguntas? ¡Escribime!</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
     <main>
         <article>
             <h3>Acerca de mí</h3>
-            <p>Hi there! Mi nombre es Emilia, but you can call me Emily. <br>
+            <p class="articleP">Hi there! Mi nombre es Emilia, but you can call me Emily. <br>
             Soy estudiante de Traductorado público en inglés, y profesora particular desde 2020. <br> Cuento con un nivel C2 de inglés (CPE) y soy hablante nativa de español. <br>
             Estudiar gramática, lingüística, literatura e idiomas en general es mi pasión. <br>
             También adoro la literatura, la música y el arte, ¡y me encanta compartir este interés con mis alumnos! Especialmente cuando ellos aportan sus propios gustos personales para trabajar en clase. 
             <section>
                 <h4>Algunos de mis libros favoritos</h4>
-                    <ul>
-                        <li><img src="../img/sketckbook.jpg" alt="The Sketch-book of Geoffrey Crayon"></li>
-                        <li><img src="../img/howl.jpg" alt="Howl's Moving Castle"></li>
-                        <li><img src="../img/wuthering.jpg" alt="Wuthering Heights"></li>
-                        <li><img src="../img/walden.jpg" alt="Walden"></li>
-                        <li><img src="../img/golden.jpg" alt="The Golden Apples of the Sun"></li>
-                        <li><img src="../img/dracula.jpg" alt="Dracula"></li>
-                    </ul>
+
+                <div class="contenedorImagenes">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner img-fluid img">
+                      <div class="carousel-item active">
+                        <img src="../img/sketckbook.jpg" class="d-block w-100" alt="The Sketch-book of Geoffrey Crayon">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>The Sketch-book of Geoffrey Crayon</h5>
+                          <p class="lead">Six chapters deal with American subjects. Of these the tales “The Legend of Sleepy Hollow” and “Rip Van Winkle” have been called the first American short stories, although both are actually Americanized versions of German folktales. <a href="https://www.britannica.com/topic/The-Sketch-Book"><em>The Sketch Book,
+                            short stories by Irving</em></a></p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/howl.jpg" class="d-block w-100" alt="Howl's Moving Castle">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Howl's Moving Castle</h5>
+                          <p class="lead">When Sophie unwittingly attracts the ire of the Witch of the Waste, she finds herself under a horrid spell that transforms her into an old lady. Her only chance at breaking it lies in the ever-moving castle in the hills: the Wizard Howl's castle. </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/dracula.jpg" class="d-block w-100" alt="Dracula">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Dracula</h5>
+                          <p class="lead">Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/wuthering.jpg" class="d-block w-100" alt="Wuthering Heights">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Wuthering Heights</h5>
+                          <p class="lead">Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/golden.jpg" class="d-block w-100" alt="The Golden Apples of the Sun">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>The Golden Apples of the Sun</h5>
+                          <p class="lead">Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/walden.jpg" class="d-block w-100" alt="Walden">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Walden</h5>
+                          <p class="lead">Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/jane.jpg" class="d-block w-100" alt="Jane Eyre">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Jane Eyre</h5>
+                          <p class="lead">Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
             </section>
+
             <p>Pleased to meet you!</p>
+
         </article>
     
         <img src="../img/divisorblanco.jpg" alt="" class="divisor">
