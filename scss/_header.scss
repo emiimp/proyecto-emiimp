@@ -1,0 +1,63 @@
+@keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+header {
+    margin: 10px;
+    padding-top: 10px;
+    font-family: $fuente-header-and-footer;
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    background-color: #f3f2f1;
+    border: 3px solid #318edf;
+    grid-area: header;
+    
+    h1 {
+        font-size: $h1-font-size;
+        padding: 10px 25px 0px 15px;  
+    }
+    
+    h2 {
+        font-size: $h2-font-size;
+        padding: 0px 25px 0px 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        padding-top: 15px;
+
+        h1 {
+            font-size: $h1-font-size + 1rem;
+        }
+
+        h2 {
+            font-size: $h2-font-size + 1rem;
+        }
+    
+        }
+
+    @media screen and (min-width: 1024px) {
+
+        padding-top: 20px;
+    
+        h1 {
+            font-size: $h1-font-size + 3rem; 
+        }
+    
+        h2 {
+            font-size: $h2-font-size + 2.5rem;
+        }
+
+    }
+
+}
+
+
+
+

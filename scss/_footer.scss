@@ -1,0 +1,52 @@
+footer {
+    background-image: linear-gradient(to top, #f7cae2);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    font-family: $fuente-header-and-footer;
+
+    .quote {
+        font-size: $footer-quote-font-size;
+    }
+
+    .yeats {
+        font-size: $footer-yeats-font-size;
+    }
+
+    a {
+        font-size: $footer-a-font-size;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        padding: 35px;
+
+        .quote { 
+            font-size: $footer-quote-font-size + 1rem;
+        }
+
+        .yeats {
+            font-size: $footer-yeats-font-size + 1rem; 
+        }
+        
+        a {
+            font-size: $footer-a-font-size + 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .quote { 
+            font-size: $footer-quote-font-size + 1.5rem;
+        }
+
+        .yeats {
+            font-size: $footer-yeats-font-size + 1.5rem; 
+        }
+        
+        a {
+            font-size: $footer-a-font-size + 1.5rem;
+        }
+    }
+    
+}
