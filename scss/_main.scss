@@ -1,6 +1,8 @@
 main {
 
     grid-area: main;
+    margin-right: 25px;
+    margin-left: 5px;
 
     h3 {
         font-size: $h3-font-size;
@@ -47,6 +49,9 @@ main {
 
 
     @media screen and (min-width: 768px) {
+
+        margin-right: 25px;
+        margin-left: 10px;
 
 
         h3 {

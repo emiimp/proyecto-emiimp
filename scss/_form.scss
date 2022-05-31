@@ -1,9 +1,6 @@
 .form {
     font-size: $form-font-size;
     line-height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 
     fieldset {
         padding-top: 10px;
@@ -16,7 +13,7 @@
 
     .rellenar, label, textarea {
         margin-left: 15px;
-        width: 250px;
+        width: 200px;
     }
 
     textarea {
@@ -57,6 +54,9 @@
     .form {
         font-size: $form-font-size + 1rem;
         line-height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     
         fieldset {
             width: 450px;

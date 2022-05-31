@@ -5,6 +5,8 @@ footer {
     flex-direction: column;
     padding: 25px;
     font-family: $fuente-header-and-footer;
+    margin-right: 20px;
+    margin-left: 5px;
 
     .quote {
         font-size: $footer-quote-font-size;
@@ -21,6 +23,8 @@ footer {
     @media screen and (min-width: 768px) {
 
         padding: 35px;
+        margin-right: 25px;
+        margin-left: 10px;
 
         .quote { 
             font-size: $footer-quote-font-size + 1rem;
