@@ -1,3 +1,5 @@
+// FONTS
+
 @font-face {
     font-family: 'DMSans-Regular';
     src: url(../font/DMSans-Regular.ttf);
@@ -10,6 +12,9 @@
 
 $fuente-header-and-footer: 'beautyDemo';
 $fuente-p: 'DMSans-Regular';
+
+//FONT SIZES
+
 $h1-font-size: 4rem;
 $h2-font-size: 3rem;
 $h3-font-size: 2.5rem;
@@ -19,3 +24,4 @@ $footer-quote-font-size:3rem;
 $footer-yeats-font-size: 2.5rem;
 $footer-a-font-size:2rem;
 $form-font-size: 1.5rem;
+

@@ -136,6 +136,23 @@ main {
   main h3::selection, main h4::selection, main p::selection {
     background: #ffdd00;
     color: black; }
+  main .textTransbox {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px; }
+  main .textTransbox::before {
+    content: "";
+    background-image: url(../img/white.jpg);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -3; }
   @media screen and (min-width: 768px) {
     main {
       margin-right: 25px;
@@ -285,8 +302,26 @@ iframe {
   .globe {
     width: 800px; } }
 
+.transbox {
+  position: relative;
+  display: block;
+  margin-right: 25px;
+  margin-left: 25px; }
+
+.transbox::before {
+  content: "";
+  background-image: url(../img/white.jpg);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3; }
+
 footer {
-  background-image: linear-gradient(to top, #f7cae2);
   grid-area: footer;
   display: flex;
   flex-direction: column;
@@ -300,24 +335,32 @@ footer {
     font-size: 2.5rem; }
   footer a {
     font-size: 2rem; }
-  @media screen and (min-width: 768px) {
-    footer {
-      padding: 35px;
-      margin-right: 25px;
-      margin-left: 10px; }
-      footer .quote {
-        font-size: 4rem; }
-      footer .yeats {
-        font-size: 3.5rem; }
-      footer a {
-        font-size: 3rem; } }
-  @media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 768px) {
+  .transbox {
+    margin-right: 50px;
+    margin-left: 50px; }
+  footer {
+    padding: 35px;
+    margin-right: 25px;
+    margin-left: 10px; }
     footer .quote {
-      font-size: 4.5rem; }
-    footer .yeats {
       font-size: 4rem; }
+    footer .yeats {
+      font-size: 3.5rem; }
     footer a {
-      font-size: 3.5rem; } }
+      font-size: 3rem; } }
+
+@media screen and (min-width: 1024px) {
+  .transbox {
+    margin-right: 300px;
+    margin-left: 300px; }
+  footer .quote {
+    font-size: 4.5rem; }
+  footer .yeats {
+    font-size: 4rem; }
+  footer a {
+    font-size: 3.5rem; } }
 
 .logos {
   display: flex;

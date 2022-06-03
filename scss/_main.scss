@@ -21,7 +21,7 @@ main {
         margin-bottom: 25px;
     }
 
-    .articleP {
+    .articleP, .redes {
         font-family: $fuente-p;
         font-size: $p-font-size;
         line-height: 2.5rem;
@@ -38,14 +38,35 @@ main {
 
     .carousel h5 {
         background-color: #d53880;
-        height: auto;
-        width: auto;
+        @include height;
+        @include width;
     }
 
     h3::selection,h4::selection,p::selection {
         background: #ffdd00;
         color: black;
     }
+
+    .textTransbox {
+        position:relative;
+        display:block;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+      
+      .textTransbox::before{
+        content:"";
+        background-image: url(../img/white.jpg);
+        opacity:0.5;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        @include height;
+        @include width;
+        z-index:-3;
+      }
 
 
     @media screen and (min-width: 768px) {
