@@ -1,15 +1,3 @@
-.carousel {
-    width: 300px;
-    height: auto;
-    margin-top: 30px;
-}
-
-.contenedorImagenes {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .imgIntro {
     border: #1d70b8 1px solid;
     width: 300px;
@@ -27,9 +15,6 @@
 } 
 
 @media screen and (min-width: 768px) {
-    .carousel {
-        width: 500px;
-    }
     
     .imgIntro {
         width: 600px;
@@ -46,10 +31,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .carousel {
-        width: 700px;
-    }
-    
+ 
     .imgIntro {
         width: 800px;
         margin-top: 20px;

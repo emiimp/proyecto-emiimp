@@ -1,0 +1,124 @@
+
+.carouselAbout {
+    width: 290px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.contenedorAbout {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.contenedorIndex, .contenedorIng {
+
+    .carousel {
+        margin: 20px;
+        padding-bottom: 25px;
+
+        .carousel-item {
+            height: 400px;
+
+            img {
+                position: relative;
+                object-fit:cover;
+                top: 0;
+                left: 0;
+                min-height: 400px;
+                
+            }
+
+            p {
+                color: black;
+                font-size: $h4-h5-font-size;
+                background-color:#f3f2f1 ;
+            }
+
+        }
+
+    }
+}
+
+    .contenedorIndex {
+        p {
+            margin-bottom: 30%;
+            } 
+    }
+
+    .contenedorIng {
+        h5 {
+            background-color: #f3f2f1;
+        }
+    }
+    
+
+  
+@media screen and (min-width: 768px) {
+
+    .carouselAbout img {
+        width: 400px;
+    }
+
+    .contenedorIndex, .contenedorIng {
+
+    
+        .carousel {
+            margin: 25px;
+            padding-bottom: 30px;
+    
+            .carousel-item {
+                height: 500px;
+
+                img {
+                    min-height: 500px;
+                }
+
+                p {
+                    
+                    font-size: $h4-h5-font-size +0.5rem;
+                    
+                }
+              }
+              
+              
+        }
+        
+}
+}
+
+   
+
+@media screen and (min-width: 1024px) {
+
+    .carouselAbout img {
+        width: 500px;
+    }
+
+    .contenedorIndex, .contenedorIng {
+
+    
+        .carousel {
+            margin: 30px;
+            padding-bottom: 35px;
+    
+            .carousel-item {
+                height: 600px;
+
+                img {
+                    min-height: 600px;
+                }
+
+                p {
+                    
+                    font-size: $h4-h5-font-size +1.5rem;
+                    
+                }
+              }
+              
+             
+        }
+    
+}
+}

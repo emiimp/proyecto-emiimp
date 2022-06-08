@@ -7,17 +7,26 @@
   
   .transbox::before{
     content:"";
-   @extend .textTransbox::before
+    background-image: url(../img/backgrounds/white.jpg);
+    opacity:0.5;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: auto;
+    width: auto;
+    z-index:-3;
   }
 
 footer {
-    grid-area: map-get($map: estilo, $key: grid-area);
-    display: map-get($map: estilo, $key: displey);
-    flex-direction: map-get($estilo,flex-direction);
-    padding: map-get($map: estilo, $key: padding);
-    font-family: map-get($map: estilo, $key: font-family);
-    margin-right: map-get($map: estilo, $key: margin-right);
-    margin-left: map-get($map: estilo, $key: margin-left);
+    grid-area:footer;
+    display:flex;
+    flex-direction: column;
+    padding: 25px;
+    font-family: $fuente-header-and-footer;
+    margin-right: 20px;
+    margin-left: 5px;
 
     .quote {
         font-size: $footer-quote-font-size;
