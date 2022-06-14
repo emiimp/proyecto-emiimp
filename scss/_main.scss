@@ -41,7 +41,7 @@ main {
         color: black;
     }
 
-    .textTransbox, .indexTransbox {
+    .textTransbox  {
         position:relative;
         display:block;
         margin-right: 30px;
@@ -59,7 +59,7 @@ main {
         left:0;
         height: auto;
         width: auto;
-        z-index:-3;
+        z-index: -3;
       }
 
     @media screen and (min-width: 768px) {

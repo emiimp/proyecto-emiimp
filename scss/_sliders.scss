@@ -30,29 +30,35 @@
                 
             }
 
-            p {
-                color: black;
-                font-size: $h4-h5-font-size;
-                background-color:#f3f2f1 ;
+            .indexText, .razonesText {
+
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                p, h5 {
+                    width: 200px;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    color: black;
+                    font-size: $p-font-size;
+                    background-color:#f3f2f1;
+                    padding: 10px;
+                }
+
+            }
+
+            .indexText {
+                p {
+                    margin-bottom: 35%;
+                }
             }
 
         }
-
     }
+
 }
-
-    .contenedorIndex {
-        p {
-            margin-bottom: 30%;
-            } 
-    }
-
-    .contenedorIng {
-        h5 {
-            background-color: #f3f2f1;
-        }
-    }
-    
 
   
 @media screen and (min-width: 768px) {
@@ -74,21 +80,28 @@
                 img {
                     min-height: 500px;
                 }
+                
+                .indexText, .razonesText {
 
+                p, h5 {
+                    width: 450px;
+                    font-size: $p-font-size +0.5rem;
+                }
+
+              }
+
+              .indexText {
                 p {
-                    
-                    font-size: $h4-h5-font-size +0.5rem;
-                    
+                    margin-bottom: 30%;
                 }
               }
+            }
               
               
         }
         
+    }
 }
-}
-
-   
 
 @media screen and (min-width: 1024px) {
 
@@ -110,12 +123,20 @@
                     min-height: 600px;
                 }
 
+                .indexText, .razonesText {
+                p, h5 {
+                    width: 950px;
+                    font-size: $p-font-size +1.5rem;
+                }
+                
+              }
+
+              .indexText {
                 p {
-                    
-                    font-size: $h4-h5-font-size +1.5rem;
-                    
+                    margin-bottom: 25%;
                 }
               }
+            }
               
              
         }

@@ -132,7 +132,7 @@ main {
   main h3::selection, main h4::selection, main p::selection {
     background: #ffdd00;
     color: black; }
-  main .textTransbox, main .indexTransbox {
+  main .textTransbox {
     position: relative;
     display: block;
     margin-right: 30px;
@@ -287,16 +287,21 @@ iframe {
       top: 0;
       left: 0;
       min-height: 400px; }
-    .contenedorIndex .carousel .carousel-item p, .contenedorIng .carousel .carousel-item p {
-      color: black;
-      font-size: 1.5rem;
-      background-color: #f3f2f1; }
-
-.contenedorIndex p {
-  margin-bottom: 30%; }
-
-.contenedorIng h5 {
-  background-color: #f3f2f1; }
+    .contenedorIndex .carousel .carousel-item .indexText, .contenedorIndex .carousel .carousel-item .razonesText, .contenedorIng .carousel .carousel-item .indexText, .contenedorIng .carousel .carousel-item .razonesText {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
+        width: 200px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: black;
+        font-size: 1rem;
+        background-color: #f3f2f1;
+        padding: 10px; }
+    .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
+      margin-bottom: 35%; }
 
 @media screen and (min-width: 768px) {
   .carouselAbout img {
@@ -308,8 +313,11 @@ iframe {
       height: 500px; }
       .contenedorIndex .carousel .carousel-item img, .contenedorIng .carousel .carousel-item img {
         min-height: 500px; }
-      .contenedorIndex .carousel .carousel-item p, .contenedorIng .carousel .carousel-item p {
-        font-size: 2rem; } }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
+        width: 450px;
+        font-size: 1.5rem; }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
+        margin-bottom: 30%; } }
 
 @media screen and (min-width: 1024px) {
   .carouselAbout img {
@@ -321,8 +329,11 @@ iframe {
       height: 600px; }
       .contenedorIndex .carousel .carousel-item img, .contenedorIng .carousel .carousel-item img {
         min-height: 600px; }
-      .contenedorIndex .carousel .carousel-item p, .contenedorIng .carousel .carousel-item p {
-        font-size: 3rem; } }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
+        width: 950px;
+        font-size: 2.5rem; }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
+        margin-bottom: 25%; } }
 
 .imgIntro {
   border: #1d70b8 1px solid;
