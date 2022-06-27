@@ -7,6 +7,7 @@ main {
     h3 {
         font-size: $h3-font-size;
         margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     h4, h5 {
@@ -39,6 +40,12 @@ main {
     h3::selection,h4::selection,p::selection {
         background: #ffdd00;
         color: black;
+    }
+
+    .accordionClases {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 30px;
     }
 
     .textTransbox  {
