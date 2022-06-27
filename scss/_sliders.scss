@@ -1,5 +1,7 @@
 .contenedorIndex, .contenedorIng {
 
+    margin: 10px;
+
     .carousel {
         margin: 20px;
         padding-bottom: 25px;
@@ -16,39 +18,40 @@
                 
             }
 
-            .indexText, .razonesText {
+            .indexText {
 
                 display: flex;
                 justify-content: center;
                 align-content: center;
-                p,h5 {
+                p {
                     width: 290px;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
                     color: black;
-                    font-size: $p-font-size;
                     background-color:#f3f2f1;
                 }
             }
 
-          
-                .razonesBgr {
-                background-color:#f3f2f1;
+        }
+    }
 
-                h5 {
-                    margin-bottom: 10px;
-                }
-                }
-           
-        
-                
-            .indexText {
-                p {
-                    margin-bottom: 70%;
-                }
-            }
+}
 
+.contenedorIndex {
+    .indexText {
+        p {
+            font-size: $p-font-size;
+            margin-bottom: 70%;
+        }
+    }
+}
+
+.contenedorIng {
+    .indexText {
+        p {
+            font-size: $index-slider-font-size;
+            margin-bottom: 40%;
         }
     }
 

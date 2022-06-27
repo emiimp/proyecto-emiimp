@@ -1,8 +1,7 @@
 main {
 
     grid-area: main;
-    margin-right: 30px;
-    margin-left: 5px;
+    margin-right: 40px;
 
     h3 {
         font-size: $h3-font-size;
@@ -22,21 +21,14 @@ main {
     .articleP, .aboutClasesP {
         font-family: $fuente-p;
         font-size: $p-font-size;
-        line-height: 2.5rem;
-        margin: 5px 40px 30px 30px;
-    }
-
-    .articleP {
+        line-height: 3rem;
+        margin: 5px 20px 30px 5px;
         text-align: justify;
-    }
-
-    .aboutClasesP {
-        text-align: left;
     }
 
     .aboutP {
         font-family: $fuente-header-and-footer;
-        font-size: $p-font-size + 1rem;
+        font-size: $p-font-size + 0.5rem;
         text-align: center;
         margin-top: 40px;
     }
@@ -47,16 +39,16 @@ main {
     }
 
     .accordionClases {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-right: 10px;
         margin-bottom: 30px;
+        margin-left: 10px;
     }
 
     .textTransbox  {
         position:relative;
         display:block;
-        margin-right: 30px;
-        margin-left: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
       }
       
       .textTransbox::before {
@@ -75,7 +67,7 @@ main {
 
     @media screen and (min-width: 768px) {
 
-        margin-right: 25px;
+        margin-right: 20px;
         margin-left: 10px;
 
 
@@ -91,7 +83,8 @@ main {
         .articleP, .aboutClasesP {
             font-size: $p-font-size + 0.2rem;
             line-height: 3.5rem;
-            margin: 10px 45px 30px 40px;  
+            margin: 10px 40px 30px 40px;  
+            
         }
 
         .aboutP {
@@ -102,6 +95,10 @@ main {
     }
 
     @media screen and (min-width: 1024px) {
+
+        margin-right: 35px;
+        margin-left: 20px;
+
         h3 {
             font-size: $h3-font-size + 2rem;
         }
