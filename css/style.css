@@ -107,24 +107,24 @@ nav {
 
 main {
   grid-area: main;
-  margin-right: 25px;
+  margin-right: 30px;
   margin-left: 5px; }
   main h3 {
     font-size: 2rem;
     margin-top: 25px;
     margin-bottom: 25px; }
   main h4, main h5 {
-    font-size: 1.5rem; }
-  main h4 {
-    margin-bottom: 20px; }
-  main h5 {
-    margin-bottom: 25px; }
-  main .articleP, main .redes {
+    font-size: 1.5rem;
+    margin-bottom: 30px; }
+  main .articleP, main .aboutClasesP {
     font-family: "DMSans-Regular";
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin: 5px 30px 25px 30px;
+    margin: 5px 40px 30px 30px; }
+  main .articleP {
     text-align: justify; }
+  main .aboutClasesP {
+    text-align: left; }
   main .aboutP {
     font-family: "beautyDemo";
     font-size: 3.5rem;
@@ -134,14 +134,14 @@ main {
     background: #ffdd00;
     color: black; }
   main .accordionClases {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 30px; }
   main .textTransbox {
     position: relative;
     display: block;
     margin-right: 30px;
-    margin-left: 30px; }
+    margin-left: 40px; }
   main .textTransbox::before {
     content: "";
     background-image: url(../img/backgrounds/white.jpg);
@@ -161,11 +161,12 @@ main {
       main h3 {
         font-size: 3rem; }
       main h4, main h5 {
-        font-size: 2.5rem; }
-      main .articleP {
+        font-size: 2.5rem;
+        margin-bottom: 35px; }
+      main .articleP, main .aboutClasesP {
         font-size: 2rem;
         line-height: 3.5rem;
-        margin: 10px 40px 30px 40px; }
+        margin: 10px 45px 30px 40px; }
       main .aboutP {
         font-size: 4.5rem; } }
   @media screen and (min-width: 1024px) {
@@ -173,24 +174,19 @@ main {
       font-size: 4rem; }
     main h4, main h5 {
       font-size: 3.5rem; }
-    main .articleP {
+    main .articleP, main .aboutClasesP {
       font-size: 2.5rem;
       line-height: 4rem;
       margin: 15px 80px 35px 80px; }
     main .aboutP {
       font-size: 5.5rem; }
-    main .sliderAbout {
-      margin-left: 40px;
-      margin-right: 40px;
+    main .aboutSection {
       display: grid;
-      grid-template-areas: "tituloLibros sliderLibros"; }
-      main .sliderAbout .tituloLibros {
-        grid-area: tituloLibros;
-        padding-top: 30%;
-        padding-left: 10%;
-        padding-right: 10%; }
-      main .sliderAbout .sliderLibros {
-        grid-area: sliderLibros; } }
+      grid-template-areas: "me aboutMe"; }
+      main .aboutSection .me {
+        grid-area: me; }
+      main .aboutSection .aboutMe {
+        grid-area: aboutMe; } }
 
 .form {
   font-size: 1rem;
