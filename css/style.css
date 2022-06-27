@@ -89,7 +89,7 @@ a {
   font-family: "DMSans-Regular";
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.5rem; }
+  font-size: 2rem; }
   a:hover {
     background-color: #28a197;
     height: auto;
@@ -103,7 +103,7 @@ nav {
 
 @media screen and (min-width: 768px) {
   a {
-    font-size: 2rem; } }
+    font-size: 2.2rem; } }
 
 main {
   grid-area: main;
@@ -116,9 +116,11 @@ main {
   main h4, main h5 {
     font-size: 1.5rem;
     margin-bottom: 30px; }
+  main .accordionTitle {
+    margin-bottom: 10px; }
   main .articleP, main .aboutClasesP {
     font-family: "DMSans-Regular";
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     margin: 5px 40px 30px 30px; }
   main .articleP {
@@ -127,7 +129,7 @@ main {
     text-align: left; }
   main .aboutP {
     font-family: "beautyDemo";
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 40px; }
   main h3::selection, main h4::selection, main p::selection {
@@ -161,25 +163,25 @@ main {
       main h3 {
         font-size: 3rem; }
       main h4, main h5 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 35px; }
       main .articleP, main .aboutClasesP {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 3.5rem;
         margin: 10px 45px 30px 40px; }
       main .aboutP {
-        font-size: 4.5rem; } }
+        font-size: 5rem; } }
   @media screen and (min-width: 1024px) {
     main h3 {
       font-size: 4rem; }
     main h4, main h5 {
-      font-size: 3.5rem; }
+      font-size: 2.5rem; }
     main .articleP, main .aboutClasesP {
       font-size: 2.5rem;
       line-height: 4rem;
       margin: 15px 80px 35px 80px; }
     main .aboutP {
-      font-size: 5.5rem; }
+      font-size: 6rem; }
     main .aboutSection {
       display: grid;
       grid-template-areas: "me aboutMe"; }
@@ -267,16 +269,6 @@ iframe {
     padding: 10px;
     margin-bottom: 15px; } }
 
-.carouselAbout {
-  width: 290px;
-  height: auto;
-  margin-top: 30px; }
-
-.contenedorAbout {
-  display: flex;
-  justify-content: center;
-  align-content: center; }
-
 .contenedorIndex .carousel, .contenedorIng .carousel {
   margin: 20px;
   padding-bottom: 25px; }
@@ -293,20 +285,21 @@ iframe {
       justify-content: center;
       align-content: center; }
       .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
-        width: 200px;
+        width: 290px;
         justify-content: center;
         align-content: center;
         align-items: center;
         color: black;
-        font-size: 1.5rem;
-        background-color: #f3f2f1;
-        padding: 10px; }
+        font-size: 2rem;
+        background-color: #f3f2f1; }
+    .contenedorIndex .carousel .carousel-item .razonesBgr, .contenedorIng .carousel .carousel-item .razonesBgr {
+      background-color: #f3f2f1; }
+      .contenedorIndex .carousel .carousel-item .razonesBgr h5, .contenedorIng .carousel .carousel-item .razonesBgr h5 {
+        margin-bottom: 10px; }
     .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
-      margin-bottom: 35%; }
+      margin-bottom: 70%; }
 
 @media screen and (min-width: 768px) {
-  .carouselAbout img {
-    width: 400px; }
   .contenedorIndex .carousel, .contenedorIng .carousel {
     margin: 25px;
     padding-bottom: 30px; }
@@ -316,9 +309,9 @@ iframe {
         min-height: 500px; }
       .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
         width: 450px;
-        font-size: 2rem; }
+        font-size: 2.2rem; }
       .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
-        margin-bottom: 30%; } }
+        margin-bottom: 45%; } }
 
 @media screen and (min-width: 1024px) {
   .carouselAbout img {
@@ -329,10 +322,10 @@ iframe {
     .contenedorIndex .carousel .carousel-item, .contenedorIng .carousel .carousel-item {
       height: 600px; }
       .contenedorIndex .carousel .carousel-item img, .contenedorIng .carousel .carousel-item img {
-        min-height: 600px; }
+        min-height: 700px; }
       .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIndex .carousel .carousel-item .indexText h5, .contenedorIndex .carousel .carousel-item .razonesText p, .contenedorIndex .carousel .carousel-item .razonesText h5, .contenedorIng .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText h5, .contenedorIng .carousel .carousel-item .razonesText p, .contenedorIng .carousel .carousel-item .razonesText h5 {
         width: 950px;
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
         margin-bottom: 25%; } }
 

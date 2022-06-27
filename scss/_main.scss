@@ -14,6 +14,10 @@ main {
         font-size: $h4-h5-font-size;
         margin-bottom: 30px;
         }
+
+    .accordionTitle {
+        margin-bottom: 10px;
+    }
         
     .articleP, .aboutClasesP {
         font-family: $fuente-p;
@@ -32,7 +36,7 @@ main {
 
     .aboutP {
         font-family: $fuente-header-and-footer;
-        font-size: $p-font-size + 2rem;
+        font-size: $p-font-size + 1rem;
         text-align: center;
         margin-top: 40px;
     }
@@ -80,12 +84,12 @@ main {
         }
 
         h4, h5 {
-            font-size: $h4-h5-font-size + 1rem;
+            font-size: $h4-h5-font-size + 0.5rem;
             margin-bottom: 35px;
         }
 
         .articleP, .aboutClasesP {
-            font-size: $p-font-size + 0.5rem;
+            font-size: $p-font-size + 0.2rem;
             line-height: 3.5rem;
             margin: 10px 45px 30px 40px;  
         }
@@ -103,11 +107,11 @@ main {
         }
 
         h4, h5 {
-            font-size: $h4-h5-font-size + 2rem;
+            font-size: $h4-h5-font-size + 1rem;
         }
 
         .articleP, .aboutClasesP {
-            font-size: $p-font-size + 1rem;
+            font-size: $p-font-size + 0.5rem;
             line-height: 4rem;
             margin: 15px 80px 35px 80px;  
         }
