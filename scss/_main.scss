@@ -1,7 +1,6 @@
 main {
 
     grid-area: main;
-    margin-right: 40px;
 
     h3 {
         font-size: $h3-font-size;
@@ -22,7 +21,7 @@ main {
         font-family: $fuente-p;
         font-size: $p-font-size;
         line-height: 3rem;
-        margin: 5px 20px 30px 5px;
+        margin: 5px 30px 30px 5px;
         text-align: justify;
     }
 
@@ -39,7 +38,7 @@ main {
     }
 
     .accordionClases {
-        margin-right: 10px;
+        margin-right: 20px;
         margin-bottom: 30px;
         margin-left: 10px;
     }
@@ -47,7 +46,7 @@ main {
     .textTransbox  {
         position:relative;
         display:block;
-        margin-right: 15px;
+        margin-right: 20px;
         margin-left: 15px;
       }
       

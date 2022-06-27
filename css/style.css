@@ -106,8 +106,7 @@ nav {
     font-size: 2rem; } }
 
 main {
-  grid-area: main;
-  margin-right: 40px; }
+  grid-area: main; }
   main h3 {
     font-size: 2rem;
     margin-top: 25px;
@@ -121,7 +120,7 @@ main {
     font-family: "DMSans-Regular";
     font-size: 1.8rem;
     line-height: 3rem;
-    margin: 5px 20px 30px 5px;
+    margin: 5px 30px 30px 5px;
     text-align: justify; }
   main .aboutP {
     font-family: "beautyDemo";
@@ -132,13 +131,13 @@ main {
     background: #ffdd00;
     color: black; }
   main .accordionClases {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 10px; }
   main .textTransbox {
     position: relative;
     display: block;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-left: 15px; }
   main .textTransbox::before {
     content: "";
@@ -268,30 +267,28 @@ iframe {
     padding: 10px;
     margin-bottom: 15px; } }
 
-.contenedorIndex, .contenedorIng {
-  margin: 10px; }
-  .contenedorIndex .carousel, .contenedorIng .carousel {
-    margin: 20px;
-    padding-bottom: 25px; }
-    .contenedorIndex .carousel .carousel-item, .contenedorIng .carousel .carousel-item {
-      height: 400px; }
-      .contenedorIndex .carousel .carousel-item img, .contenedorIng .carousel .carousel-item img {
-        position: relative;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-        min-height: 400px; }
-      .contenedorIndex .carousel .carousel-item .indexText, .contenedorIng .carousel .carousel-item .indexText {
-        display: flex;
+.contenedorIndex .carousel, .contenedorIng .carousel {
+  margin-top: 15px;
+  padding-bottom: 25px; }
+  .contenedorIndex .carousel .carousel-item, .contenedorIng .carousel .carousel-item {
+    height: 400px; }
+    .contenedorIndex .carousel .carousel-item img, .contenedorIng .carousel .carousel-item img {
+      position: relative;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 400px; }
+    .contenedorIndex .carousel .carousel-item .indexText, .contenedorIng .carousel .carousel-item .indexText {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
+        width: 290px;
         justify-content: center;
-        align-content: center; }
-        .contenedorIndex .carousel .carousel-item .indexText p, .contenedorIng .carousel .carousel-item .indexText p {
-          width: 290px;
-          justify-content: center;
-          align-content: center;
-          align-items: center;
-          color: black;
-          background-color: #f3f2f1; }
+        align-content: center;
+        align-items: center;
+        color: black;
+        background-color: #f3f2f1; }
 
 .contenedorIndex .indexText p {
   font-size: 1.8rem;
@@ -393,7 +390,7 @@ footer {
   footer .yeats {
     font-size: 2rem; }
   footer a {
-    font-size: 1.5rem; }
+    font-size: 1.7rem; }
 
 @media screen and (min-width: 768px) {
   .transbox {
@@ -408,7 +405,7 @@ footer {
     footer .yeats {
       font-size: 3rem; }
     footer a {
-      font-size: 2.5rem; } }
+      font-size: 2.7rem; } }
 
 @media screen and (min-width: 1024px) {
   .transbox {
@@ -419,7 +416,7 @@ footer {
   footer .yeats {
     font-size: 3.5rem; }
   footer a {
-    font-size: 3rem; } }
+    font-size: 3.2rem; } }
 
 .logos {
   display: flex;
