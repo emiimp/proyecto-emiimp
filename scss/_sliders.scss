@@ -52,7 +52,6 @@
             margin-bottom: 40%;
         }
     }
-
 }
 
   
@@ -73,7 +72,7 @@
                     min-height: 500px;
                 }
                 
-                .indexText, .razonesText {
+                .indexText {
 
                 p, h5 {
                     width: 450px;
@@ -115,7 +114,7 @@
                     min-height: 700px;
                 }
 
-                .indexText, .razonesText {
+                .indexText {
                 p, h5 {
                     width: 950px;
                     font-size: $p-font-size +0.5rem;
